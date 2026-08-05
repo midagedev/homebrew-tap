@@ -1,4 +1,4 @@
-# Generated for scry v0.2.0. Future releases update this file from goreleaser
+# Generated for scry v0.2.1. Future releases update this file from goreleaser
 # (.goreleaser.yaml `brews:`); until the tap token exists it is written by hand
 # from the release's own checksums.txt.
 class Scry < Formula
@@ -8,23 +8,23 @@ class Scry < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/midagedev/scry/releases/download/v0.2.0/scry_0.2.0_darwin_arm64.tar.gz"
-      sha256 "fb1071c134d2f11c98cf22f2599473001c6c8ea4fe85ed86f0b8f83b4544d83c"
+      url "https://github.com/midagedev/scry/releases/download/v0.2.1/scry_0.2.1_darwin_arm64.tar.gz"
+      sha256 "06e21574e36663ced29754c1b75bb97aa5c60ea4e0ed5ef5eb102f5580ad541d"
     end
     on_intel do
-      url "https://github.com/midagedev/scry/releases/download/v0.2.0/scry_0.2.0_darwin_amd64.tar.gz"
-      sha256 "726090330aac023c370f8e3a02e4139f0857a9e317f50bed1ebc9c1d2b7d1d4e"
+      url "https://github.com/midagedev/scry/releases/download/v0.2.1/scry_0.2.1_darwin_amd64.tar.gz"
+      sha256 "eb34d84b8c5a51eff04cbf90ef962952c10d15fae17b3bbef88b3c9d9664131a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/midagedev/scry/releases/download/v0.2.0/scry_0.2.0_linux_arm64.tar.gz"
-      sha256 "5e1bcb6979b437a11037c48122782ee2fcc77c14f6dcea4bd635076e34944e2c"
+      url "https://github.com/midagedev/scry/releases/download/v0.2.1/scry_0.2.1_linux_arm64.tar.gz"
+      sha256 "39081c5de8d5b10180303997ecdbc241fa523911cd16627fc30859b3f521a05d"
     end
     on_intel do
-      url "https://github.com/midagedev/scry/releases/download/v0.2.0/scry_0.2.0_linux_amd64.tar.gz"
-      sha256 "455b1609016417191b937e4e41b3ebfa651e64cc0e0152cbf6f71acabfa6fa1c"
+      url "https://github.com/midagedev/scry/releases/download/v0.2.1/scry_0.2.1_linux_amd64.tar.gz"
+      sha256 "9ca129194358f9df7d15d0038bb259e66df707455f8479ce8676b62629867575"
     end
   end
 
