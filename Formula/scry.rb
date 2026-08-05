@@ -1,6 +1,5 @@
-# Generated for scry v0.3.0. Future releases update this file from goreleaser
-# (.goreleaser.yaml `brews:`); until the tap token exists it is written by hand
-# from the release's own checksums.txt.
+# Generated for scry v0.4.0. From the next release goreleaser rewrites this
+# file itself (SSH deploy key, .goreleaser.yaml `brews:`).
 class Scry < Formula
   desc "Local SQLite mirror of your Jira issues — web UI, TUI, and agent SQL"
   homepage "https://github.com/midagedev/scry"
@@ -8,23 +7,23 @@ class Scry < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/midagedev/scry/releases/download/v0.3.0/scry_0.3.0_darwin_arm64.tar.gz"
-      sha256 "db46a60151533a554ae1bb25808951ffe8fc48dc795b15b8edbca3f8906aeefd"
+      url "https://github.com/midagedev/scry/releases/download/v0.4.0/scry_0.4.0_darwin_arm64.tar.gz"
+      sha256 "041897b6859efe096988604011eb93973041466994bcba41c1b479626bf8e6e8"
     end
     on_intel do
-      url "https://github.com/midagedev/scry/releases/download/v0.3.0/scry_0.3.0_darwin_amd64.tar.gz"
-      sha256 "4fc3a25fa224efc32e5c05106bebc2d03908df3511a6fbd4a75903b6b5a2b1a0"
+      url "https://github.com/midagedev/scry/releases/download/v0.4.0/scry_0.4.0_darwin_amd64.tar.gz"
+      sha256 "4e6399aa039d92a8de152f1673d2cebc5b27580cf402c66032cae05c642c09d8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/midagedev/scry/releases/download/v0.3.0/scry_0.3.0_linux_arm64.tar.gz"
-      sha256 "bfb06067f6400705826a3d03baa952eaceb9832fcf12581d5825c955dc015e43"
+      url "https://github.com/midagedev/scry/releases/download/v0.4.0/scry_0.4.0_linux_arm64.tar.gz"
+      sha256 "7172ddfd5793e86f002506cc8b23a5ef035db26373f54b10451ffb5e92167c48"
     end
     on_intel do
-      url "https://github.com/midagedev/scry/releases/download/v0.3.0/scry_0.3.0_linux_amd64.tar.gz"
-      sha256 "4660751cab3b1d86cab61745c75291c5747dc1ae18b5928121b0b8cc4f4f9e6b"
+      url "https://github.com/midagedev/scry/releases/download/v0.4.0/scry_0.4.0_linux_amd64.tar.gz"
+      sha256 "9e3aa14746da7e91fb76d6dcb6b3b96b3e6807186b80b1dedf82eab7ec116adf"
     end
   end
 
