@@ -4,7 +4,6 @@
 class Scry < Formula
   desc "Local SQLite mirror of your Jira issues — web UI, TUI, and agent SQL"
   homepage "https://github.com/midagedev/scry"
-  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
