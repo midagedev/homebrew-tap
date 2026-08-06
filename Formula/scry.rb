@@ -5,21 +5,21 @@
 class Scry < Formula
   desc "Local SQLite mirror of your Jira issues — web UI, TUI, and agent SQL"
   homepage "https://github.com/midagedev/scry"
-  version "0.6.0"
+  version "0.7.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/midagedev/scry/releases/download/v0.6.0/scry_0.6.0_darwin_amd64.tar.gz"
-      sha256 "23a69fdda95bc4d2bc1324c4460bbf9fe3471fe8d9833bb80e8f3b4db9471d58"
+      url "https://github.com/midagedev/scry/releases/download/v0.7.0/scry_0.7.0_darwin_amd64.tar.gz"
+      sha256 "149b879b68918b21dd1fe7c2143c01c0c54df9ee2b7dccafb3e562574d535730"
 
       define_method(:install) do
         bin.install "scry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/midagedev/scry/releases/download/v0.6.0/scry_0.6.0_darwin_arm64.tar.gz"
-      sha256 "e52acf180bbbb7328a94475241535cece913acbeb55a3e24b00e91d67a47c1c9"
+      url "https://github.com/midagedev/scry/releases/download/v0.7.0/scry_0.7.0_darwin_arm64.tar.gz"
+      sha256 "4c682606813449a0c659d07f97a10f16b9827d5fb624d111408c95744d204965"
 
       define_method(:install) do
         bin.install "scry"
@@ -29,15 +29,15 @@ class Scry < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/midagedev/scry/releases/download/v0.6.0/scry_0.6.0_linux_amd64.tar.gz"
-      sha256 "8c61aae3a752527aac1e4ae4cb8e7c838d60bb7c3ca137cb2988a1f4b011b45e"
+      url "https://github.com/midagedev/scry/releases/download/v0.7.0/scry_0.7.0_linux_amd64.tar.gz"
+      sha256 "622ae37dab78ab8cdd4b9f006e7f27465c2d4f94da6e3dc486be7e14a70008a6"
       define_method(:install) do
         bin.install "scry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/midagedev/scry/releases/download/v0.6.0/scry_0.6.0_linux_arm64.tar.gz"
-      sha256 "2c97856563e1a90554237e5fecb739f45da203e005c7d31f3a8358b50459722a"
+      url "https://github.com/midagedev/scry/releases/download/v0.7.0/scry_0.7.0_linux_arm64.tar.gz"
+      sha256 "efad7f447164198d42f180461861cc3b92e505e17f33bac703f3eca7bac5fdca"
       define_method(:install) do
         bin.install "scry"
       end
