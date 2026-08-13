@@ -1,0 +1,64 @@
+# typed: false
+# frozen_string_literal: true
+
+# Installs the last scry-named v0.11.0 archives as `gadak`. The next
+# goreleaser run will overwrite this file with gadak-named artifacts.
+class Gadak < Formula
+  desc "Local SQLite mirror of your Jira issues — web UI, TUI, and agent SQL"
+  homepage "https://github.com/midagedev/gadak"
+  version "0.11.0"
+  license "Apache-2.0"
+
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/midagedev/gadak/releases/download/v0.11.0/scry_0.11.0_darwin_amd64.tar.gz"
+      sha256 "d3052a98f6e18fc0570ae9280f82dd9d64ae5d2bb426719d55c5580d09c4dd69"
+
+      define_method(:install) do
+        bin.install "scry" => "gadak"
+        bin.install_symlink "gadak" => "scry"
+      end
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/midagedev/gadak/releases/download/v0.11.0/scry_0.11.0_darwin_arm64.tar.gz"
+      sha256 "3d0866f35f9608267311df5a4802586d47094a804df962c3b18226561257f58e"
+
+      define_method(:install) do
+        bin.install "scry" => "gadak"
+        bin.install_symlink "gadak" => "scry"
+      end
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/midagedev/gadak/releases/download/v0.11.0/scry_0.11.0_linux_amd64.tar.gz"
+      sha256 "9611845751e0530d8d4f9ae83b8e9ab6e245dde3f880bde628882d1d4eb09cfd"
+
+      define_method(:install) do
+        bin.install "scry" => "gadak"
+        bin.install_symlink "gadak" => "scry"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/midagedev/gadak/releases/download/v0.11.0/scry_0.11.0_linux_arm64.tar.gz"
+      sha256 "cf68bd8a1b77807c622b7fe5a12bdf636dca73b10424c1b7e2d8263c763279e0"
+
+      define_method(:install) do
+        bin.install "scry" => "gadak"
+        bin.install_symlink "gadak" => "scry"
+      end
+    end
+  end
+
+  def caveats
+    <<~EOS
+      scry was renamed to gadak. This formula installs `gadak` and a
+      `scry` symlink so existing scripts keep working until the next release.
+    EOS
+  end
+
+  test do
+    system "#{bin}/gadak", "version"
+  end
+end
