@@ -1,6 +1,6 @@
 cask "gadak" do
-  version "0.15.1"
-  sha256 "2ee4247695238232a6464d6b8e16ea0c75aca36af1e29dcbd25861d2aee132a7"
+  version "0.15.2"
+  sha256 "8ccc88d08df7e2a68c2083cab347faa8ea6d91aed61e37438366a390d89c8e30"
 
   url "https://github.com/midagedev/gadak/releases/download/v#{version}/Gadak-#{version}-arm64.dmg"
   name "Gadak"
