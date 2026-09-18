@@ -5,21 +5,21 @@
 class GadakCli < Formula
   desc "Local SQLite mirror of your Jira issues — web UI and agent SQL"
   homepage "https://github.com/midagedev/gadak"
-  version "0.23.1"
+  version "0.24.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/midagedev/gadak/releases/download/v0.23.1/gadak_0.23.1_darwin_amd64.tar.gz"
-      sha256 "0b7751132bcf29b30ffe618de4957a0d7e2768918eb18e475688d09ab73fb2f7"
+      url "https://github.com/midagedev/gadak/releases/download/v0.24.0/gadak_0.24.0_darwin_amd64.tar.gz"
+      sha256 "c641a077c79ee314c3e262813d20f8aab0d817d3a1eb1dd6e121aa3f4b27bd54"
 
       define_method(:install) do
         bin.install "gadak"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/midagedev/gadak/releases/download/v0.23.1/gadak_0.23.1_darwin_arm64.tar.gz"
-      sha256 "e96b21944c3afcdff742eb1ab3c71ccae00454d9e3572c8f0b82ea46c0bc654c"
+      url "https://github.com/midagedev/gadak/releases/download/v0.24.0/gadak_0.24.0_darwin_arm64.tar.gz"
+      sha256 "673629d07dadaead9c1ccc079b23971813041e790a08265490dad5d951b96f2e"
 
       define_method(:install) do
         bin.install "gadak"
@@ -29,15 +29,15 @@ class GadakCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/midagedev/gadak/releases/download/v0.23.1/gadak_0.23.1_linux_amd64.tar.gz"
-      sha256 "be413487b71fc11d7adb056059b6e8e177a58015bc47e7c7935cf7920103800c"
+      url "https://github.com/midagedev/gadak/releases/download/v0.24.0/gadak_0.24.0_linux_amd64.tar.gz"
+      sha256 "e826dd536001e00d11d8697de00e399f9de72d7f12afb381d176d0b97a220b68"
       define_method(:install) do
         bin.install "gadak"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/midagedev/gadak/releases/download/v0.23.1/gadak_0.23.1_linux_arm64.tar.gz"
-      sha256 "a340b5dd6e0695ecc2d8cc32422a5759aa9c8a9630a7dd701a05f5dbadea6fc4"
+      url "https://github.com/midagedev/gadak/releases/download/v0.24.0/gadak_0.24.0_linux_arm64.tar.gz"
+      sha256 "cb04a15216f42ed84e7127750239a7c863cbbb67f236a3dc52dcc8098e9e6f05"
       define_method(:install) do
         bin.install "gadak"
       end
