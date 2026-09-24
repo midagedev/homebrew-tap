@@ -5,21 +5,21 @@
 class Toktape < Formula
   desc "The black-box tape for local LLM serving"
   homepage "https://github.com/midagedev/toktape"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/midagedev/toktape/releases/download/v0.5.0/toktape_0.5.0_darwin_amd64.tar.gz"
-      sha256 "b0aa272976dfb2b5557fce92e46fea549616a5ebe5ea5399352f3b1c9ea738d1"
+      url "https://github.com/midagedev/toktape/releases/download/v0.6.0/toktape_0.6.0_darwin_amd64.tar.gz"
+      sha256 "d5e73ac6a57a5c84b8ff1f42a2eaf066a589b6d7f875eb09892aaaea7033ec9d"
 
       define_method(:install) do
         bin.install "toktape"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/midagedev/toktape/releases/download/v0.5.0/toktape_0.5.0_darwin_arm64.tar.gz"
-      sha256 "e88769543fb950b42a07779a56301a5f9394d837f5f9be5404194a013bbf9a69"
+      url "https://github.com/midagedev/toktape/releases/download/v0.6.0/toktape_0.6.0_darwin_arm64.tar.gz"
+      sha256 "d70665690820432e22ccd3513b77afedb0f657f983ff2132cf1037d706f1a844"
 
       define_method(:install) do
         bin.install "toktape"
@@ -29,15 +29,15 @@ class Toktape < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/midagedev/toktape/releases/download/v0.5.0/toktape_0.5.0_linux_amd64.tar.gz"
-      sha256 "9f8f6f446a9cb48eb30f0a6a9ac5c0e9063dd4cde1206bb019050f1f021fc0fe"
+      url "https://github.com/midagedev/toktape/releases/download/v0.6.0/toktape_0.6.0_linux_amd64.tar.gz"
+      sha256 "32d7f613109a1ceffa3724e9d87b5cd9126bfd47e0c671a01973fb69b4d9fa30"
       define_method(:install) do
         bin.install "toktape"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/midagedev/toktape/releases/download/v0.5.0/toktape_0.5.0_linux_arm64.tar.gz"
-      sha256 "81695ad089353df8cc63faf6dcbc5b982057e38bbeb20bcb8f5fd1e748e417ad"
+      url "https://github.com/midagedev/toktape/releases/download/v0.6.0/toktape_0.6.0_linux_arm64.tar.gz"
+      sha256 "af7204b9999284e8bdbb4c2b69f84e303a0dd9ad6b7a330e8f708418d81c1e23"
       define_method(:install) do
         bin.install "toktape"
       end
