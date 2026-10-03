@@ -3,6 +3,7 @@
 ```sh
 brew install midagedev/tap/gadak        # the macOS app (cask) — the bundled CLI lands on PATH too
 brew install midagedev/tap/gadak-cli    # CLI only (macOS + Linux)
+brew install midagedev/tap/bloomery     # LLM inference server (Linux x86-64, NVIDIA GPU)
 ```
 
 [gadak](https://github.com/midagedev/gadak) — your Jira and Confluence,
