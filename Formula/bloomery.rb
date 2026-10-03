@@ -11,7 +11,7 @@ class Bloomery < Formula
   sha256 "cca1271b093cd2610660c700dd3d48b1ded272b7c8f377faa7dc5a93d2b13de8"
   license "MIT"
 
-  depends_on os: :linux
+  depends_on :linux
   depends_on arch: :x86_64
 
   def install
