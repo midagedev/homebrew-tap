@@ -6,9 +6,9 @@
 class Bloomery < Formula
   desc "LLM inference server for one workstation: llama-server API, CUDA + AVX2"
   homepage "https://github.com/midagedev/bloomery"
-  url "https://github.com/midagedev/bloomery/releases/download/v0.2.5/bloomery-0.2.5-linux-x86_64-cuda-sm86.tar.gz"
-  version "0.2.5"
-  sha256 "70df707c7ccb3ca3d22835b3c3837220c670b3173c904cdb6adb9af0c01e9b56"
+  url "https://github.com/midagedev/bloomery/releases/download/v0.2.6/bloomery-0.2.6-linux-x86_64-cuda-sm86.tar.gz"
+  version "0.2.6"
+  sha256 "de015eef4b2c0e4e7c085d0b5adef84055b95b77a2254c235e0741498ff1e289"
   license "MIT"
 
   depends_on :linux
