@@ -1,6 +1,6 @@
 cask "mwoyeo" do
-  version "1.0.4"
-  sha256 "a915080fde028b202f7509fc18710ceddef6c1f40f86f3995597ec3edee778ed"
+  version "1.1.0"
+  sha256 "0007a7bbcfbbe9d02088acadcf2637571fb47b8d0a999101afa724c759c0b151"
 
   url "https://github.com/midagedev/mwoyeo/releases/download/v#{version}/Mwoyeo-#{version}-arm64.dmg"
   name "Mwoyeo"
@@ -8,13 +8,14 @@ cask "mwoyeo" do
   homepage "https://github.com/midagedev/mwoyeo"
 
   depends_on arch: :arm64
+  depends_on macos: ">= :tahoe"
 
   app "Mwoyeo.app"
 
   zap trash: "~/Library/Preferences/dev.midagedev.mwoyeo.plist"
 
   caveats <<~EOS
-    Mwoyeo needs macOS 27 and Screen Recording permission (asked on first launch).
+    Mwoyeo needs macOS 26 and Screen Recording permission (asked on first launch).
     The first text recognition after launch can take up to a minute while the model loads.
   EOS
 end
