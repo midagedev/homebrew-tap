@@ -8,7 +8,7 @@ class Bloomery < Formula
   homepage "https://github.com/midagedev/bloomery"
   url "https://github.com/midagedev/bloomery/releases/download/v0.3.4/bloomery-0.3.4-linux-x86_64-cuda-sm86.tar.gz"
   version "0.3.4"
-  sha256 "a95033469577402a22904deef03329db8bae531a3caf2b39a62581350dd398e2"
+  sha256 "c37afd8e2629781140de57a2525932a78afd363e893093abaf6b45f2dd5580b4"
   license "MIT"
 
   depends_on :linux
