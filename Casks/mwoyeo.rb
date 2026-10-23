@@ -1,6 +1,6 @@
 cask "mwoyeo" do
-  version "1.1.6"
-  sha256 "8d7edd037ae6f194c98be1763082d980ad1e3e69baee997569776f0b57f42429"
+  version "1.1.7"
+  sha256 "19f03d3fdbe70208150505ee0bf0feecf202aa5b2f926e53543a3f28dcb905e7"
 
   url "https://github.com/midagedev/mwoyeo/releases/download/v#{version}/Mwoyeo-#{version}-arm64.dmg"
   name "Mwoyeo"
