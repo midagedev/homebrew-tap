@@ -7,19 +7,19 @@
 class Bloomery < Formula
   desc "LLM inference server for one workstation: llama-server API, CUDA or Metal"
   homepage "https://github.com/midagedev/bloomery"
-  version "0.3.9"
+  version "0.3.10"
   license "MIT"
 
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/midagedev/bloomery/releases/download/v0.3.9/bloomery-0.3.9-macos-arm64-metal.tar.gz"
-    sha256 "c2e00d1d0294b6711d79df95cc1fb4c14b2fa366087cba5677b61b34476f8541"
+    url "https://github.com/midagedev/bloomery/releases/download/v0.3.10/bloomery-0.3.10-macos-arm64-metal.tar.gz"
+    sha256 "d4e0b3a929fd0f7a36e32d3420f3b3fabbd175d5e74c119ac31a96e4fd8f99b7"
   end
 
   on_linux do
     depends_on arch: :x86_64
-    url "https://github.com/midagedev/bloomery/releases/download/v0.3.9/bloomery-0.3.9-linux-x86_64-cuda-sm86.tar.gz"
-    sha256 "aae94c621c3383ece143c1998769eb3500c4ae115ba9a44a87d7ab4e238d71a7"
+    url "https://github.com/midagedev/bloomery/releases/download/v0.3.10/bloomery-0.3.10-linux-x86_64-cuda-sm86.tar.gz"
+    sha256 "d357efb8df5ec8ee25446cb072288fa14be00c06213279f27b80ba75843638ff"
   end
 
   def install
