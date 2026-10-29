@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# One release, two builds: Linux x86-64 (sm_86 PTX and AVX2 host kernels, NVIDIA
-# GPUs) and Apple Silicon (the Metal backend, macOS 26.2 or newer, signed and
-# notarized). Inside each tarball the binaries sit at
+# One release, three builds: Linux x86-64 (sm_86 PTX and AVX2 host kernels, NVIDIA
+# GPUs), Linux arm64 for a GB10 (DGX Spark, sm_121a PTX) and Apple Silicon (the
+# Metal backend, macOS 26.2 or newer, signed and notarized). Inside each tarball the binaries sit at
 # bloomery-<version>-<platform>/bin/.
 class Bloomery < Formula
   desc "LLM inference server for one workstation: llama-server API, CUDA or Metal"
@@ -17,9 +17,15 @@ class Bloomery < Formula
   end
 
   on_linux do
-    depends_on arch: :x86_64
-    url "https://github.com/midagedev/bloomery/releases/download/v0.3.11/bloomery-0.3.11-linux-x86_64-cuda-sm86.tar.gz"
-    sha256 "6dd02c1a9faa2bb91bca9b1cb457c7747ae505695e2e9bf3ff998d9fc0b8bede"
+    on_intel do
+      url "https://github.com/midagedev/bloomery/releases/download/v0.3.11/bloomery-0.3.11-linux-x86_64-cuda-sm86.tar.gz"
+      sha256 "6dd02c1a9faa2bb91bca9b1cb457c7747ae505695e2e9bf3ff998d9fc0b8bede"
+    end
+    # The GB10 (DGX Spark) build: sm_121a PTX, runs on a GB10's GPU only.
+    on_arm do
+      url "https://github.com/midagedev/bloomery/releases/download/v0.3.11/bloomery-0.3.11-linux-aarch64-cuda-sm121a.tar.gz"
+      sha256 "481b06a1a7ee8f574811a824dcec4e7cb8f34a8441be0bb774be6b91549f4d57"
+    end
   end
 
   def install
