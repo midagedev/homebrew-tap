@@ -13,13 +13,13 @@ class Bloomery < Formula
   on_macos do
     depends_on arch: :arm64
     url "https://github.com/midagedev/bloomery/releases/download/v0.3.11/bloomery-0.3.11-macos-arm64-metal.tar.gz"
-    sha256 "fb4c9692676bb9900e15cabef5e7cb245f31e7b7a04f8f32ac73b7edc57c99ab"
+    sha256 "0b736fc683feb40dd767dda816fd27feae805fa036fc3fe05cbdea2fb8f361ba"
   end
 
   on_linux do
     depends_on arch: :x86_64
     url "https://github.com/midagedev/bloomery/releases/download/v0.3.11/bloomery-0.3.11-linux-x86_64-cuda-sm86.tar.gz"
-    sha256 "cb71fe67294b6a52768f449a2a3bae2ed852c1fb49368a3e763a87d1a92d527c"
+    sha256 "6dd02c1a9faa2bb91bca9b1cb457c7747ae505695e2e9bf3ff998d9fc0b8bede"
   end
 
   def install
