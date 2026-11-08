@@ -19,12 +19,12 @@ class Bloomery < Formula
   on_linux do
     on_intel do
       url "https://github.com/midagedev/bloomery/releases/download/v0.3.13/bloomery-0.3.13-linux-x86_64-cuda-sm86.tar.gz"
-      sha256 "d7dfc68db313bc2525b5310f6a69ea9dff69a420dcbc2e141f97785ad5e181d2"
+      sha256 "2d5e1100957f2933b56d84a02db9023d8da4e8ce34c3eab6a4bbca48f76c00ba"
     end
     # The GB10 (DGX Spark) build: sm_121a PTX, runs on a GB10's GPU only.
     on_arm do
       url "https://github.com/midagedev/bloomery/releases/download/v0.3.13/bloomery-0.3.13-linux-aarch64-cuda-sm121a.tar.gz"
-      sha256 "74bd6129f009d7db78f8506f0524555984859bfc3c225f10eea78c68a1af8d30"
+      sha256 "4bed49e0af84e31f50ed9fbb0f43bac61ada8ed33fc4d45a9c9160bf5f4c53bf"
     end
   end
 
