@@ -7,24 +7,24 @@
 class Bloomery < Formula
   desc "LLM inference server for one workstation: llama-server API, CUDA or Metal"
   homepage "https://github.com/midagedev/bloomery"
-  version "0.3.12"
+  version "0.3.13"
   license "MIT"
 
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/midagedev/bloomery/releases/download/v0.3.12/bloomery-0.3.12-macos-arm64-metal.tar.gz"
-    sha256 "abf4e8e8b8daa0069e97f7e4771a7db0dab8d3f986ce90818bd92f5c45e9e75b"
+    url "https://github.com/midagedev/bloomery/releases/download/v0.3.13/bloomery-0.3.13-macos-arm64-metal.tar.gz"
+    sha256 "463d9f9812041b73861a102b3cf9898757b3232d65f5cf6a8fdf844105369923"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/midagedev/bloomery/releases/download/v0.3.12/bloomery-0.3.12-linux-x86_64-cuda-sm86.tar.gz"
-      sha256 "fe227fa9e077cb56daf21b5e5ebcf41e22984115d404abe242b30f24e223f8aa"
+      url "https://github.com/midagedev/bloomery/releases/download/v0.3.13/bloomery-0.3.13-linux-x86_64-cuda-sm86.tar.gz"
+      sha256 "d7dfc68db313bc2525b5310f6a69ea9dff69a420dcbc2e141f97785ad5e181d2"
     end
     # The GB10 (DGX Spark) build: sm_121a PTX, runs on a GB10's GPU only.
     on_arm do
-      url "https://github.com/midagedev/bloomery/releases/download/v0.3.12/bloomery-0.3.12-linux-aarch64-cuda-sm121a.tar.gz"
-      sha256 "c0d2c277cac3e70eb5c78208915ae858fd2b151d637ac8592ae41cfbec751d15"
+      url "https://github.com/midagedev/bloomery/releases/download/v0.3.13/bloomery-0.3.13-linux-aarch64-cuda-sm121a.tar.gz"
+      sha256 "74bd6129f009d7db78f8506f0524555984859bfc3c225f10eea78c68a1af8d30"
     end
   end
 
