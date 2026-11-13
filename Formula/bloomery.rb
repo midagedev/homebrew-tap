@@ -13,18 +13,18 @@ class Bloomery < Formula
   on_macos do
     depends_on arch: :arm64
     url "https://github.com/midagedev/bloomery/releases/download/v0.3.14/bloomery-0.3.14-macos-arm64-metal.tar.gz"
-    sha256 "20d012df91270d66a2282aacb2147090800a239ebdb954119b5034852231df45"
+    sha256 "4e71aca6ecea30a486ba3997c449dec17a40c0922e95a2e87d4a80b196b46f97"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/midagedev/bloomery/releases/download/v0.3.14/bloomery-0.3.14-linux-x86_64-cuda-sm86.tar.gz"
-      sha256 "d963b33674532b2acd8ba32f01b5c3701be3776738a4b940d1776641041bf5a8"
+      sha256 "367d598755dc923c9ff4d3053052112489b1f9f588d53ae86ad9905cd9d53cda"
     end
     # The GB10 (DGX Spark) build: sm_121a PTX, runs on a GB10's GPU only.
     on_arm do
       url "https://github.com/midagedev/bloomery/releases/download/v0.3.14/bloomery-0.3.14-linux-aarch64-cuda-sm121a.tar.gz"
-      sha256 "6347314735d741d2cbc34e6dd06a209ba97f1b83bc6190246564f49d2e3110bc"
+      sha256 "e6885ddda36ac1301fd744776ab874701571ce67946ad8f618f5b1f63791b24d"
     end
   end
 
